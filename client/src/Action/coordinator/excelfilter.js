@@ -60,6 +60,7 @@ const messageOnDuplicate = (doi, title) => {
             error: error[0]
         }
     }
+
     // console.log(jsonData.Sheet1);
 
   };

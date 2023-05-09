@@ -13,7 +13,7 @@ exports.ownVerify = async (req, res) => {
         if (!user) {
             return res.send({ message: "Invalid Link1" });
         }
-        //console.log(req);
+          //console.log(req);
         const token = await Token.findOne({
             userId: user._id,
             token: req.params.token,

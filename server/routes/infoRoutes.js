@@ -15,7 +15,7 @@ const {getApiData} = require('../Controllers/journalController/getApiData')
 const {deletejournal} = require('../Controllers/journalController/deletejournal')
 const {deleteconference} = require('../Controllers/conferenceController/deleteconference')
 const {authMiddlerwar} = require('../middlerwares/authMiddlewar');
-const { addConference } = require('../Controllers/conferenceController/addConference');
+const { addConference } = require('../Controllers/conferenceController/addConference'); 
 
 router.post("/sendjournal", sendjournal);
 router.post("/addjournal", addjournal);
@@ -37,7 +37,5 @@ router.post("/deleteconference",deleteconference);
 router.post("/senddata", sendtodb);
 
 router.post("/getapiData",getApiData);
-
-
 
 module.exports = router;
